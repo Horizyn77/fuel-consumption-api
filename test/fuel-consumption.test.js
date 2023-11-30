@@ -4,9 +4,10 @@ import assert from 'assert';
 
 const pgp = pgPromise();
 const DATABASE_URL=  "postgres://mnzmecyj:CRrupvfWFfPFVcFdxhFYEF_y8fNv5Qrz@berry.db.elephantsql.com/mnzmecyj";
+const DATABASE_URL_TEST = process.env.DATABASE_URL_TEST;
 
 const config = { 
-	connectionString : DATABASE_URL
+	connectionString : DATABASE_URL_TEST || DATABASE_URL
 }
 
 if (process.env.NODE_ENV == 'production') {
