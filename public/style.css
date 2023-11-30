@@ -46,3 +46,30 @@ body {
 #filled-up-heading {
     display: inline;
 }
+
+.add-vehicle-form div, .refuel-vehicle-form div {
+    margin-bottom: 8px;
+}
+
+.add-vehicle-form label, .refuel-vehicle-form label {
+    width: 160px;
+    display: inline-block;
+}
+
+.add-vehicle-form, .refuel-vehicle-form {
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+}
+
+#filled-up-heading {
+    width: 160px;
+    display: inline-block;
+}
+
+.filled-up-container label {
+    width: initial !important;
+    display: inline !important;
+}
