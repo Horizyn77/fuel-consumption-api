@@ -42,12 +42,12 @@ vehicles.data.forEach(item => {
     fuelConsumptionItem.classList.add("vehicle-data", "fuel-consumption-item")
     vehicleIdItem.classList.add("vehicle-data", "vehicle-id")
 
-    descriptionItemDiv.textContent = "Description: "
-    regNumberItemDiv.textContent = "Reg Number: "
-    totalDistanceItemDiv.textContent = "Total Distance: "
-    fuelSpentItemDiv.textContent = "Fuel Spent: "
-    fuelConsumptionItemDiv.textContent = "Fuel Consumption: "
-    vehicleIdItemDiv.textContent = "Vehicle ID: "
+    descriptionItemDiv.innerHTML = "Description:&nbsp;"
+    regNumberItemDiv.innerHTML = "Reg Number:&nbsp;"
+    totalDistanceItemDiv.innerHTML = "Total Distance:&nbsp;"
+    fuelSpentItemDiv.innerHTML = "Fuel Spent:&nbsp;"
+    fuelConsumptionItemDiv.innerHTML = "Fuel Consumption:&nbsp;"
+    vehicleIdItemDiv.innerHTML = "Vehicle ID:&nbsp;"
 //getting data from api and inserting into elements from the dom
     descriptionItemDiv2.innerText = item.description;
     regNumberItemDiv2.innerText = item.reg_number;
