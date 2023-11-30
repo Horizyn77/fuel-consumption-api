@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>Fuel Consumption API</h1>
+
+    <div><a href="/">Back to Home</a></div>
+
+    <h2>Refuel Vehicle</h2>
+
+    <form action="">
+        <div>
+            <label for="">Vehicle ID</label>
+            <input type="text" id="vehicle-id-input">
+        </div>
+        <div>
+            <label for="">Litres</label>
+            <input type="text" id="litres-input">
+        </div>
+        <div>
+            <label for="">Amount</label>
+            <input type="text" id="amount-input">
+        </div>
+        <div>
+            <label for="">Distance</label>
+            <input type="text" id="distance-input">
+        </div>
+        <div>
+            <div id="filled-up-heading">Filled Up</div>
+            <input type="radio" name="filled-up" id="" value="true">
+            <label for="">True</label>
+            <input type="radio" name="filled-up" id="" value="false">
+            <label for="">False</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<script src="/js/refuelVehicle.js" type="module"></script>

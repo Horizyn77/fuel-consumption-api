@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.vehicle-item {
+    width: 260px;
+    height: 420px;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.vehicle-item img {
+    width: 240px;
+    padding-left: 10px;
+}
+
+.vehicle-data {
+    display: flex;
+    margin-bottom: 6px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.vehicles-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu div {
+    margin-right: 14px;
+}
+
+#filled-up-heading {
+    display: inline;
+}
