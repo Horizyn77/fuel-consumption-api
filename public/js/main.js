@@ -1,5 +1,5 @@
 const vehiclesContainer = document.querySelector(".vehicles-container");
-
+//making a request to an api endpoint to get all the vehicles added
 async function getData() {
     const response = await axios.get("/api/vehicles")
 
@@ -7,7 +7,7 @@ async function getData() {
 }
 
 const vehicles = await getData();
-
+//looping over each vehicle item and creating html/dom elements
 vehicles.data.forEach(item => {
     const vehicleItem = document.createElement("div")
     const imgContainer = document.createElement("div")
@@ -48,14 +48,14 @@ vehicles.data.forEach(item => {
     fuelSpentItemDiv.textContent = "Fuel Spent: "
     fuelConsumptionItemDiv.textContent = "Fuel Consumption: "
     vehicleIdItemDiv.textContent = "Vehicle ID: "
-
+//getting data from api and inserting into elements from the dom
     descriptionItemDiv2.innerText = item.description;
     regNumberItemDiv2.innerText = item.reg_number;
     totalDistanceItemDiv2.innerText = item.total_distance;
     fuelSpentItemDiv2.innerText = item.total_amount;
     fuelConsumptionItemDiv2.innerText = item.fuel_consumption;
     vehicleIdItemDiv2.innerText = item.id;
-
+//appending elements to the container on the html page
     imgContainer.append(img)
     descriptionItem.append(descriptionItemDiv, descriptionItemDiv2);
     regNumberItem.append(regNumberItemDiv, regNumberItemDiv2);

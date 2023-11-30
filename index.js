@@ -1,7 +1,7 @@
 import pgPromise from 'pg-promise';
 import express from 'express';
 import 'dotenv/config';
-
+//setting up express handlebars
 import { engine } from "express-handlebars";
 
 import FuelConsumption from './fuel-consumption.js';
@@ -21,7 +21,7 @@ const fuelConsumptionAPI = FuelConsumptionAPI(fuelConsumption)
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+//configuring express handlebars
 app.engine("handlebars", engine({
     layoutsDir: "./views/layouts"
 }));
@@ -39,15 +39,15 @@ app.get('/api/vehicles', fuelConsumptionAPI.vehicles);
 app.get('/api/vehicle', fuelConsumptionAPI.vehicle);
 app.post('/api/vehicle', fuelConsumptionAPI.addVehicle);
 app.post('/api/refuel', fuelConsumptionAPI.refuel);
-
+//rending the index page when a user goes to the home route
 app.get("/", (req, res) => {
     res.render("index")
 })
-
+//rendering the add vehicle page when a user navigates to the /add route
 app.get("/add", (req, res) => {
     res.render("add-vehicle")
 })
-
+//rending the refuel vehicle page when a user navigates to the /refuel route
 app.get("/refuel", (req, res) => {
     res.render("refuel-vehicle")
 })
