@@ -1,4 +1,5 @@
 # Fuel consumption API
+[![Node.js CI with PostgreSQL](https://github.com/Horizyn77/fuel-consumption-api/actions/workflows/node.js.yml/badge.svg)](https://github.com/Horizyn77/fuel-consumption-api/actions/workflows/node.js.yml)
 
 The fuel consumption API keeps track of vehicle fuel usage.
 
